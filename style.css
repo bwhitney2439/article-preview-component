@@ -19,6 +19,7 @@ body {
 img {
   max-width: 100%;
   display: block;
+  user-select: none;
 }
 
 h6 {
@@ -178,7 +179,7 @@ main {
     top: 129px;
   }
 
-  .share-container::before {
+  /* .share-container::before {
     content: "";
     position: absolute;
     bottom: -12px;
@@ -191,7 +192,7 @@ main {
     border-top: 12px solid #555;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-  }
+  } */
 
   .share-container::after {
     content: "";
@@ -203,7 +204,7 @@ main {
     margin-right: auto;
     width: 0;
     height: 0;
-    border-top: 12px solid #555;
+    border-top: 12px solid #48556a;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
   }

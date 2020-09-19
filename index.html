@@ -41,7 +41,7 @@
               <p>Michell Appleton</p>
               <p>28 Jun 2020</p>
             </div>
-            <div class="share-icon-container">
+            <div class="share-icon-container" onclick="toggleShareContainer()">
               <img src="./images/icon-share.svg" alt="" />
             </div>
           </div>
@@ -51,10 +51,33 @@
           <img src="./images/icon-facebook.svg" alt="" />
           <img src="./images/icon-twitter.svg" alt="" />
           <img src="./images/icon-pinterest.svg" alt="" />
-          <div class="share-container-share-icon">
+          <div
+            class="share-container-share-icon"
+            onclick="toggleShareContainer()"
+          >
             <img src="./images/icon-share-white.svg" alt="" />
           </div>
         </div>
+
+        <script>
+          function toggleShareContainer() {
+            var shareContainer = document.querySelector(".share-container");
+            var shareIconContainer = document.querySelector(
+              ".share-icon-container"
+            );
+            if (shareContainer.style.display === "none") {
+              shareContainer.style.display = "flex";
+              shareIconContainer.style.backgroundColor = "#6e8098";
+              shareIconContainer.querySelector("img").src =
+                "./images/icon-share-white.svg";
+            } else {
+              shareContainer.style.display = "none";
+              shareIconContainer.style.backgroundColor = "#ecf2f8";
+              shareIconContainer.querySelector("img").src =
+                "./images/icon-share.svg";
+            }
+          }
+        </script>
       </main>
     </div>
   </body>
