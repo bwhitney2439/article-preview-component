@@ -92,7 +92,6 @@ main {
 }
 
 .share-container {
-  display: flex;
   align-items: center;
   height: 64px;
   padding: 0 32px;
@@ -178,21 +177,6 @@ main {
     left: unset;
     top: 129px;
   }
-
-  /* .share-container::before {
-    content: "";
-    position: absolute;
-    bottom: -12px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 0;
-    height: 0;
-    border-top: 12px solid #555;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-  } */
 
   .share-container::after {
     content: "";
